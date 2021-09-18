@@ -2,14 +2,16 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.feature-item:not(:last-child) {
-  margin-right: 30px;
+.feature__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
-.feature-list {
+.feature__list {
   display: flex;
 }
-.feature-fone-img {
+.feature__fone-img {
   width: 270px;
   height: 120px;
   display: flex;
@@ -19,7 +21,7 @@
   background-color: #f5f4fa;
   margin-bottom: 30px;
 }
-.feature-secondary-title {
+.feature__secondary-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -28,7 +30,7 @@
   color: var(--main-title-color);
   margin-bottom: 16px;
 }
-.feature-text {
+.feature__text {
   width: 270px;
   font-size: 14px;
   line-height: 1.71;

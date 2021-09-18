@@ -1,11 +1,11 @@
-.button-projects-list {
+.projects__button-list {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.button-projects-btn {
+.projects__button-btn {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -20,6 +20,13 @@
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
 }
 .button-all {
   width: 73px;
@@ -40,10 +47,4 @@
 .button-mark {
   width: 130px;
   height: 38px;
-}
-.button-projects-btn:hover,
-.button-projects-btn:focus {
-  background-color: var(--accent-color);
-  color: #ffffff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
